@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	msginterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/agent/v1/websocket/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/agent"
-	"github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
+	msginterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/agent/v1/websocket/interfaces"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/agent"
+	"github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
 )
 
 // MyHandler handles all websocket events

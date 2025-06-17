@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"os"
 
-	api "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/manage/v1"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/manage"
+	api "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/manage/v1"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/manage"
 )
 
 const (

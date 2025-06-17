@@ -1,4 +1,4 @@
-module github.com/deepgram/deepgram-go-sdk/hack/tools
+module github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/hack/tools
 
 go 1.19
 

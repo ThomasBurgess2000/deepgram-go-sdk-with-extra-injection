@@ -7,7 +7,7 @@
 	on the Deepgram.com Platform.
 
 	GitHub repo: https://github.com/deepgram/deepgram-go-sdk
-	Go SDK Examples: https://github.com/deepgram/deepgram-go-sdk/tree/main/examples
+	Go SDK Examples: https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/tree/main/examples
 
 	Deepgram Platform API reference: https://developers.deepgram.com/reference
 	Documentation: https://developers.deepgram.com/docs
@@ -20,15 +20,15 @@
 package sdk
 
 import (
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/analyze"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/listen"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/manage"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/speak"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/analyze"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/listen"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/manage"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/speak"
 
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/analyze/v1"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/rest"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/websocket"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/manage/v1"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/speak/v1/rest"
-	_ "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/speak/v1/websocket"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/analyze/v1"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/rest"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/websocket"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/manage/v1"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/speak/v1/rest"
+	_ "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/speak/v1/websocket"
 )

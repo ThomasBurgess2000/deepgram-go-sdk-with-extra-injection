@@ -13,10 +13,10 @@ import (
 	"sync"
 	"time"
 
-	msginterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/agent/v1/websocket/interfaces"
-	microphone "github.com/deepgram/deepgram-go-sdk/v3/pkg/audio/microphone"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/agent"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
+	msginterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/agent/v1/websocket/interfaces"
+	microphone "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/audio/microphone"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/agent"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
 )
 
 type MyHandler struct {

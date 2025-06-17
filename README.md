@@ -1,6 +1,6 @@
 # Deepgram Go SDK
 
-[![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4) [![Go Reference](https://pkg.go.dev/badge/github.com/deepgram/deepgram-go-sdk/v3.svg)](https://pkg.go.dev/github.com/deepgram/deepgram-go-sdk/v3) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-rounded)](./.github/CODE_OF_CONDUCT.md)
+[![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4) [![Go Reference](https://pkg.go.dev/badge/github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3.svg)](https://pkg.go.dev/github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-rounded)](./.github/CODE_OF_CONDUCT.md)
 
 Official Go SDK for [Deepgram](https://www.deepgram.com/). Power your apps with world-class speech and Language AI models.
 
@@ -88,7 +88,7 @@ The Voice Agent interfaces have been updated to use the new Voice Agent V1 API. 
 
 ### V2.\* to V3
 
-V3 Introduced a generic object approach for Agent Providers to ease the maintenance overhead of adding new providers see this [PR](https://github.com/deepgram/deepgram-go-sdk/pull/296) for more details.
+V3 Introduced a generic object approach for Agent Providers to ease the maintenance overhead of adding new providers see this [PR](https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/pull/296) for more details.
 
 ## Requirements
 
@@ -99,7 +99,7 @@ V3 Introduced a generic object approach for Agent Providers to ease the maintena
 To incorporate this SDK into your project's `go.mod` file, run the following command from your repo:
 
 ```bash
-go get github.com/deepgram/deepgram-go-sdk/v3
+go get github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3
 ```
 
 ## Getting an API Key
@@ -119,9 +119,9 @@ import (
     "log"
     "os"
 
-    api "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/rest"
-    interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
-    client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/listen"
+    api "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/rest"
+    interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
+    client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/listen"
 )
 // initiate client
 ctx := context.Background()
@@ -238,8 +238,8 @@ import (
     "fmt"
     "os"
 
-    interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
-    client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/listen"
+    interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
+    client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/listen"
 )
 
 // Initiate Client
@@ -293,8 +293,8 @@ import (
     "os"
     "time"
 
-    interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
-    client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/agent"
+    interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
+    client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/agent"
 )
 
 // Initialize the SDK
@@ -1064,13 +1064,13 @@ Older SDK versions will receive Priority 1 (P1) bug support only. Security issue
 
 Interested in contributing? We ❤️ pull requests!
 
-To make sure our community is safe for all, be sure to review and agree to our [Code of Conduct](https://github.com/deepgram/deepgram-go-sdk/blob/main/.github/CODE_OF_CONDUCT.md). Then see the [Contribution](https://github.com/deepgram/deepgram-go-sdk/blob/main/.github/CONTRIBUTING.md) guidelines for more information.
+To make sure our community is safe for all, be sure to review and agree to our [Code of Conduct](https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/blob/main/.github/CODE_OF_CONDUCT.md). Then see the [Contribution](https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/blob/main/.github/CONTRIBUTING.md) guidelines for more information.
 
 ### Getting Help
 
 We love to hear from you so if you have questions, comments or find a bug in the
 project, let us know! You can either:
 
-- [Open an issue in this repository](https://github.com/deepgram/deepgram-go-sdk/issues/new)
+- [Open an issue in this repository](https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/issues/new)
 - [Join the Deepgram Github Discussions Community](https://github.com/orgs/deepgram/discussions)
 - [Join the Deepgram Discord Community](https://discord.gg/xWRaCDBtW4)

@@ -39,7 +39,7 @@ linters-settings:
   gocyclo:
     min-complexity: 20
   goimports:
-    local-prefixes: github.com/deepgram/deepgram-go-sdk
+    local-prefixes: github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection
   govet:
     check-shadowing: true
     settings:

@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	msginterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/speak/v1/websocket/interfaces"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces/v1"
-	speak "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/speak"
+	msginterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/speak/v1/websocket/interfaces"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces/v1"
+	speak "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/speak"
 )
 
 const (

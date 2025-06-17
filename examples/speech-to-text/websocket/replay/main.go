@@ -12,9 +12,9 @@ import (
 	"log"
 	"os"
 
-	replay "github.com/deepgram/deepgram-go-sdk/v3/pkg/audio/replay"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/listen"
+	replay "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/audio/replay"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/listen"
 )
 
 func main() {
