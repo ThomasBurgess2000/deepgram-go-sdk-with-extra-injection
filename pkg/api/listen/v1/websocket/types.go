@@ -5,7 +5,7 @@
 package websocketv1
 
 import (
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/websocket/interfaces"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/websocket/interfaces"
 )
 
 /*

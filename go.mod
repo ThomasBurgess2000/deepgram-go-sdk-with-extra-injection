@@ -1,8 +1,9 @@
-module github.com/deepgram/deepgram-go-sdk/v3
+module github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3
 
 go 1.19
 
 require (
+	github.com/deepgram/deepgram-go-sdk/v3 v3.1.1
 	github.com/dvonthenen/websocket v1.5.1-dyv.2
 	github.com/gordonklaus/portaudio v0.0.0-20230709114228-aafa478834f5
 	github.com/gorilla/schema v1.3.0
@@ -11,10 +12,7 @@ require (
 	k8s.io/klog/v2 v2.110.1
 )
 
-require (
-	github.com/google/go-cmp v0.5.9 // indirect
-	github.com/jarcoal/httpmock v1.3.0
-)
+require github.com/jarcoal/httpmock v1.3.0
 
 require (
 	github.com/fatih/color v1.15.0 // indirect
