@@ -15,8 +15,8 @@ import (
 
 	klog "k8s.io/klog/v2"
 
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces/v1"
-	restv1 "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/rest/v1"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces/v1"
+	restv1 "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/rest/v1"
 )
 
 func NewREST(apiKey string, options *interfaces.ClientOptions) *RESTClient {

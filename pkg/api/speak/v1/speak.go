@@ -12,8 +12,8 @@
 package legacy
 
 import (
-	speakv1 "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/speak/v1/rest"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/speak"
+	speakv1 "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/speak/v1/rest"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/speak"
 )
 
 const (

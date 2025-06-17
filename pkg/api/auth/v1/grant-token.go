@@ -13,8 +13,8 @@ import (
 
 	klog "k8s.io/klog/v2"
 
-	api "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/auth/v1/interfaces"
-	version "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/version"
+	api "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/auth/v1/interfaces"
+	version "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/version"
 )
 
 // GrantToken generates a JWT.

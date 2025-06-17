@@ -7,10 +7,10 @@ package websocketv1
 import (
 	"context"
 
-	msginterface "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/agent/v1/websocket/interfaces"
-	common "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/common/v1"
-	commoninterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/common/v1/interfaces"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
+	msginterface "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/agent/v1/websocket/interfaces"
+	common "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/common/v1"
+	commoninterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/common/v1/interfaces"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
 )
 
 // client messages

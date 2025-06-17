@@ -10,10 +10,10 @@ package speak
 import (
 	"context"
 
-	msginterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/speak/v1/websocket/interfaces"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces/v1"
-	speakv1rest "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/speak/v1/rest"
-	speakv1ws "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/speak/v1/websocket"
+	msginterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/speak/v1/websocket/interfaces"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces/v1"
+	speakv1rest "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/speak/v1/rest"
+	speakv1ws "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/speak/v1/websocket"
 )
 
 /***********************************/

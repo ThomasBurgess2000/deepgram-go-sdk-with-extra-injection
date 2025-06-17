@@ -6,8 +6,8 @@
 package auth
 
 import (
-	authv1 "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/auth/v1"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces/v1"
+	authv1 "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/auth/v1"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces/v1"
 )
 
 const (
