@@ -36,7 +36,7 @@ func NewDefaultChanHandler() *DefaultChanHandler {
 		messageChan:           make(chan *interfaces.MessageResponse),
 		metadataChan:          make(chan *interfaces.MetadataResponse),
 		speechStartedChan:     make(chan *interfaces.SpeechStartedResponse),
-		utteranceEndChan:      make(chan *interfaces.UtteranceEndResponse),
+		utteranceEndChan:      make(chan *interfaces.UtteranceEndResponseExtra),
 		closeChan:             make(chan *interfaces.CloseResponse),
 		errorChan:             make(chan *interfaces.ErrorResponse),
 		unhandledChan:         make(chan *[]byte),
@@ -73,8 +73,8 @@ func (dch DefaultChanHandler) GetSpeechStarted() []*chan *interfaces.SpeechStart
 }
 
 // GetUtteranceEnd returns the utterance end channels
-func (dch DefaultChanHandler) GetUtteranceEnd() []*chan *interfaces.UtteranceEndResponse {
-	return []*chan *interfaces.UtteranceEndResponse{&dch.utteranceEndChan}
+func (dch DefaultChanHandler) GetUtteranceEnd() []*chan *interfaces.UtteranceEndResponseExtra {
+	return []*chan *interfaces.UtteranceEndResponseExtra{&dch.utteranceEndChan}
 }
 
 // GetClose returns the close channels

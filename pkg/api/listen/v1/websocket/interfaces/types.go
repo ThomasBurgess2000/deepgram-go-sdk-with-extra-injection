@@ -117,6 +117,13 @@ type UtteranceEndResponse struct {
 	LastWordEnd float64 `json:"last_word_end,omitempty"`
 }
 
+type UtteranceEndResponseExtra struct {
+	Type        string            `json:"type,omitempty"`
+	Channel     []int             `json:"channel,omitempty"`
+	LastWordEnd float64           `json:"last_word_end,omitempty"`
+	Extra       map[string]string `json:"extra,omitempty"`
+}
+
 type SpeechStartedResponse struct {
 	Type      string  `json:"type,omitempty"`
 	Channel   []int   `json:"channel,omitempty"`

@@ -21,7 +21,7 @@ type DefaultChanHandler struct {
 	messageChan       chan *interfaces.MessageResponse
 	metadataChan      chan *interfaces.MetadataResponse
 	speechStartedChan chan *interfaces.SpeechStartedResponse
-	utteranceEndChan  chan *interfaces.UtteranceEndResponse
+	utteranceEndChan  chan *interfaces.UtteranceEndResponseExtra
 	closeChan         chan *interfaces.CloseResponse
 	errorChan         chan *interfaces.ErrorResponse
 	unhandledChan     chan *[]byte
@@ -30,13 +30,14 @@ type DefaultChanHandler struct {
 // ChanRouter routes events
 type ChanRouter struct {
 	debugWebsocket bool
+	extra          map[string]string
 
 	// call out to channels
 	openChan          []*chan *interfaces.OpenResponse
 	messageChan       []*chan *interfaces.MessageResponse
 	metadataChan      []*chan *interfaces.MetadataResponse
 	speechStartedChan []*chan *interfaces.SpeechStartedResponse
-	utteranceEndChan  []*chan *interfaces.UtteranceEndResponse
+	utteranceEndChan  []*chan *interfaces.UtteranceEndResponseExtra
 	closeChan         []*chan *interfaces.CloseResponse
 	errorChan         []*chan *interfaces.ErrorResponse
 	unhandledChan     []*chan *[]byte

@@ -43,7 +43,7 @@ func NewChanRouter(chans interfaces.LiveMessageChan) *ChanRouter {
 		messageChan:       make([]*chan *interfaces.MessageResponse, 0),
 		metadataChan:      make([]*chan *interfaces.MetadataResponse, 0),
 		speechStartedChan: make([]*chan *interfaces.SpeechStartedResponse, 0),
-		utteranceEndChan:  make([]*chan *interfaces.UtteranceEndResponse, 0),
+		utteranceEndChan:  make([]*chan *interfaces.UtteranceEndResponseExtra, 0),
 		closeChan:         make([]*chan *interfaces.CloseResponse, 0),
 		errorChan:         make([]*chan *interfaces.ErrorResponse, 0),
 		unhandledChan:     make([]*chan *[]byte, 0),
@@ -177,6 +177,10 @@ func (r *ChanRouter) processMetadata(byMsg []byte) error {
 			return err
 		}
 
+		if r.extra == nil {
+			r.extra = msg.Extra
+		}
+
 		for _, ch := range r.metadataChan {
 			*ch <- &msg
 		}
@@ -211,8 +215,15 @@ func (r *ChanRouter) processUtteranceEndResponse(byMsg []byte) error {
 			return err
 		}
 
+		msgExtra := interfaces.UtteranceEndResponseExtra{
+			Type:        msg.Type,
+			Channel:     msg.Channel,
+			LastWordEnd: msg.LastWordEnd,
+			Extra:       r.extra,
+		}
+
 		for _, ch := range r.utteranceEndChan {
-			*ch <- &msg
+			*ch <- &msgExtra
 		}
 		return nil
 	}

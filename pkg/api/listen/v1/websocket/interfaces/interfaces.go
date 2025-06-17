@@ -14,7 +14,7 @@ type LiveMessageChan interface {
 	GetMessage() []*chan *MessageResponse
 	GetMetadata() []*chan *MetadataResponse
 	GetSpeechStarted() []*chan *SpeechStartedResponse
-	GetUtteranceEnd() []*chan *UtteranceEndResponse
+	GetUtteranceEnd() []*chan *UtteranceEndResponseExtra
 	GetClose() []*chan *CloseResponse
 	GetError() []*chan *ErrorResponse
 	GetUnhandled() []*chan *[]byte
@@ -29,7 +29,7 @@ type LiveMessageCallback interface {
 	Message(mr *MessageResponse) error
 	Metadata(md *MetadataResponse) error
 	SpeechStarted(ssr *SpeechStartedResponse) error
-	UtteranceEnd(ur *UtteranceEndResponse) error
+	UtteranceEnd(ur *UtteranceEndResponseExtra) error
 	Close(cr *CloseResponse) error
 	Error(er *ErrorResponse) error
 	UnhandledEvent(byData []byte) error
