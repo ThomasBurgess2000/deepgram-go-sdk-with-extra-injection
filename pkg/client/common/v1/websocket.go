@@ -18,8 +18,8 @@ import (
 	"github.com/dvonthenen/websocket"
 	klog "k8s.io/klog/v2"
 
-	commonv1interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/common/v1/interfaces"
-	clientinterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
+	commonv1interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/common/v1/interfaces"
+	clientinterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
 )
 
 // gocritic:ignore

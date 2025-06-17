@@ -15,10 +15,10 @@ import (
 
 	klog "k8s.io/klog/v2"
 
-	msginterfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/websocket/interfaces"
-	microphone "github.com/deepgram/deepgram-go-sdk/v3/pkg/audio/microphone"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/listen"
+	msginterfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/websocket/interfaces"
+	microphone "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/audio/microphone"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/listen"
 )
 
 type MyHandler struct {
@@ -26,7 +26,7 @@ type MyHandler struct {
 	messageChan       chan *msginterfaces.MessageResponse
 	metadataChan      chan *msginterfaces.MetadataResponse
 	speechStartedChan chan *msginterfaces.SpeechStartedResponse
-	utteranceEndChan  chan *msginterfaces.UtteranceEndResponse
+	utteranceEndChan  chan *msginterfaces.UtteranceEndResponseExtra
 	closeChan         chan *msginterfaces.CloseResponse
 	errorChan         chan *msginterfaces.ErrorResponse
 	unhandledChan     chan *[]byte
@@ -38,7 +38,7 @@ func NewMyHandler() *MyHandler {
 		messageChan:       make(chan *msginterfaces.MessageResponse),
 		metadataChan:      make(chan *msginterfaces.MetadataResponse),
 		speechStartedChan: make(chan *msginterfaces.SpeechStartedResponse),
-		utteranceEndChan:  make(chan *msginterfaces.UtteranceEndResponse),
+		utteranceEndChan:  make(chan *msginterfaces.UtteranceEndResponseExtra),
 		closeChan:         make(chan *msginterfaces.CloseResponse),
 		errorChan:         make(chan *msginterfaces.ErrorResponse),
 		unhandledChan:     make(chan *[]byte),
@@ -72,8 +72,8 @@ func (dch MyHandler) GetSpeechStarted() []*chan *msginterfaces.SpeechStartedResp
 }
 
 // GetUtteranceEnd returns the utterance end channels
-func (dch MyHandler) GetUtteranceEnd() []*chan *msginterfaces.UtteranceEndResponse {
-	return []*chan *msginterfaces.UtteranceEndResponse{&dch.utteranceEndChan}
+func (dch MyHandler) GetUtteranceEnd() []*chan *msginterfaces.UtteranceEndResponseExtra {
+	return []*chan *msginterfaces.UtteranceEndResponseExtra{&dch.utteranceEndChan}
 }
 
 // GetClose returns the close channels

@@ -12,7 +12,7 @@ import (
 	prettyjson "github.com/hokaccha/go-prettyjson"
 	klog "k8s.io/klog/v2"
 
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/websocket/interfaces"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/websocket/interfaces"
 )
 
 // NewWithDefault creates a CallbackRouter with the default callback handler
@@ -117,7 +117,7 @@ func (r *CallbackRouter) processSpeechStartedResponse(byMsg []byte) error {
 }
 
 func (r *CallbackRouter) processUtteranceEndResponse(byMsg []byte) error {
-	var msg interfaces.UtteranceEndResponse
+	var msg interfaces.UtteranceEndResponseExtra
 	if err := json.Unmarshal(byMsg, &msg); err != nil {
 		return err
 	}

@@ -13,7 +13,7 @@ import (
 	prettyjson "github.com/hokaccha/go-prettyjson"
 	klog "k8s.io/klog/v2"
 
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/websocket/interfaces"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/websocket/interfaces"
 )
 
 // NewDefaultCallbackHandler creates a new DefaultCallbackHandler
@@ -156,7 +156,7 @@ func (dch DefaultCallbackHandler) SpeechStarted(ssr *interfaces.SpeechStartedRes
 }
 
 // UtteranceEnd is the callback for when a channel goes silent
-func (dch DefaultCallbackHandler) UtteranceEnd(ur *interfaces.UtteranceEndResponse) error {
+func (dch DefaultCallbackHandler) UtteranceEnd(ur *interfaces.UtteranceEndResponseExtra) error {
 	fmt.Printf("\n[UtteranceEnd]\n")
 	if dch.debugWebsocketVerbose {
 		fmt.Printf("\nUtteranceEnd.Timestamp: %f\n", ur.LastWordEnd)

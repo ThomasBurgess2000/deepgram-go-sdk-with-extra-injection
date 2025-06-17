@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/deepgram/deepgram-go-sdk/v3/pkg/api/listen/v1/websocket/interfaces"
-	microphone "github.com/deepgram/deepgram-go-sdk/v3/pkg/audio/microphone"
-	interfaces "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/interfaces"
-	client "github.com/deepgram/deepgram-go-sdk/v3/pkg/client/listen"
+	api "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/api/listen/v1/websocket/interfaces"
+	microphone "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/audio/microphone"
+	interfaces "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/interfaces"
+	client "github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3/pkg/client/listen"
 )
 
 // Implement your own callback
@@ -66,7 +66,7 @@ func (c MyCallback) SpeechStarted(ssr *api.SpeechStartedResponse) error {
 	return nil
 }
 
-func (c MyCallback) UtteranceEnd(ur *api.UtteranceEndResponse) error {
+func (c MyCallback) UtteranceEnd(ur *api.UtteranceEndResponseExtra) error {
 	utterance := strings.TrimSpace(c.sb.String())
 	if len(utterance) > 0 {
 		fmt.Printf("[------- UtteranceEnd]: %s\n", utterance)
