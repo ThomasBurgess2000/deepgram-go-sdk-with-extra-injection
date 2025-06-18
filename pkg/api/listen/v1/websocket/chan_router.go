@@ -160,6 +160,10 @@ func (r *ChanRouter) processMessage(byMsg []byte) error {
 			return err
 		}
 
+		if r.extra == nil {
+			r.extra = msg.Metadata.Extra
+		}
+
 		for _, ch := range r.messageChan {
 			*ch <- &msg
 		}
