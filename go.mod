@@ -25,3 +25,5 @@ require (
 	github.com/zaf/g711 v0.0.0-20190814101024-76a4a538f52b // indirect
 	golang.org/x/sys v0.6.0 // indirect
 )
+
+replace github.com/deepgram/deepgram-go-sdk/v3 => github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3 v3.0.4
