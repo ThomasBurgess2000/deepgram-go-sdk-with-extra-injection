@@ -12,7 +12,6 @@ require (
 )
 
 require (
-	github.com/deepgram/deepgram-go-sdk/v3 v3.1.1
 	github.com/jarcoal/httpmock v1.3.0
 )
 
@@ -26,4 +25,4 @@ require (
 	golang.org/x/sys v0.6.0 // indirect
 )
 
-replace github.com/deepgram/deepgram-go-sdk/v3 => github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3 v3.0.4
+replace github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3 => github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/v3 v3.0.4

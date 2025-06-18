@@ -74,7 +74,7 @@ Official Go SDK for [Deepgram](https://www.deepgram.com/). Power your apps with 
 
 You can learn more about the Deepgram API at [developers.deepgram.com](https://developers.deepgram.com/docs).
 
-Documentation for specifics about the structs, interfaces, and functions of this SDK can be found here: [Go SDK Documentation](https://pkg.go.dev/github.com/deepgram/deepgram-go-sdk@main)
+Documentation for specifics about the structs, interfaces, and functions of this SDK can be found here: [Go SDK Documentation](https://pkg.go.dev/github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection@main)
 
 ## Migrating from earlier versions
 

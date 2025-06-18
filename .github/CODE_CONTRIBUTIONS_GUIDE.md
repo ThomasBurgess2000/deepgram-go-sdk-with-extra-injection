@@ -125,6 +125,6 @@ To check out code to work on, please refer to [this guide][github_workflow].
 
 > Attribution: This was in part barrowed from this [document](https://github.com/kubernetes/community/blob/master/contributors/devel/development.md) but tailored for our use case.
 
-[project]: https://github.com/deepgram/deepgram-go-sdk
+[project]: https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection
 [issue]: https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/issues
 [github_workflow]: https://github.com/ThomasBurgess2000/deepgram-go-sdk-with-extra-injection/.github/GITHUB_WORKFLOW.md
